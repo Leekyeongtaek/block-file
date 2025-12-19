@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>파일 확장자 차단</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h2>파일 확장자 차단</h2>
+
+  <!-- 1. 고정 확장자 -->
+  <section>
+    <h3>고정 확장자</h3>
+    <label><input type="checkbox" value="bat"> bat</label>
+    <label><input type="checkbox" value="cmd"> cmd</label>
+    <label><input type="checkbox" value="com"> com</label>
+    <label><input type="checkbox" value="cpl"> cpl</label>
+    <label><input type="checkbox" value="exe"> exe</label>
+    <label><input type="checkbox" value="scr"> scr</label>
+    <label><input type="checkbox" value="js"> js</label>
+  </section>
+
+  <!-- 2. 커스텀 확장자 입력 -->
+  <section>
+    <h3>커스텀 확장자</h3>
+    <input type="text" id="customInput" placeholder="확장자 입력 (최대 20자)" />
+    <button id="addBtn">+ 추가</button>
+  </section>
+
+  <!-- 3. 커스텀 확장자 목록 -->
+  <section>
+    <p id="count">0 / 200</p>
+    <div id="customList"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
