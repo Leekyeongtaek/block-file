@@ -1,0 +1,63 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 0;
+  border-top: 2px solid #000;
+  border-bottom: 1px solid #000;
+  margin-bottom: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+section h3 {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+label {
+  margin-right: 12px;
+  font-size: 14px;
+}
+
+#customInput {
+  width: 210px;
+}
+
+#customList {
+  border: 1px solid #999;
+  min-height: 20px;
+  width: 400px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  background-color: #fff;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  padding: 2px 6px;
+  font-size: 12px;
+  background-color: #f9f9f9;
+  line-height: 1;
+}
+
+.tag button {
+  background: none;
+  border: none;
+  margin-left: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 1;
+  padding: 0;
+}

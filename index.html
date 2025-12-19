@@ -1,14 +1,17 @@
 <!DOCTYPE html>
+<!-- 화면 읽기 프로그램이 한국어 발음 규칙으로 읽음 -->
+<!-- 브라우저 자동 기능 -->
+<!-- 맞춤법 검사, 번역 제안, 입력 보조 -->
+<!-- 검색엔진(SEO) 한국어 페이지로 분류 -->
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
   <title>파일 확장자 차단</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="block-style.css" />
 </head>
 <body>
   <h2>파일 확장자 차단</h2>
 
-  <!-- 1. 고정 확장자 -->
   <section>
     <h3>고정 확장자</h3>
     <label><input type="checkbox" value="bat"> bat</label>
@@ -20,19 +23,18 @@
     <label><input type="checkbox" value="js"> js</label>
   </section>
 
-  <!-- 2. 커스텀 확장자 입력 -->
   <section>
     <h3>커스텀 확장자</h3>
-    <input type="text" id="customInput" placeholder="확장자 입력 (최대 20자)" />
+    <input type="text" id="customInput" placeholder="확장자 입력 (알파벳, 숫자 최대 20자)" />
     <button id="addBtn">+ 추가</button>
+    <button id="clearBtn">초기화</button>
   </section>
 
-  <!-- 3. 커스텀 확장자 목록 -->
   <section>
     <p id="count">0 / 200</p>
     <div id="customList"></div>
   </section>
 
-  <script src="script.js"></script>
+  <script src="block-script.js"></script>
 </body>
 </html>
